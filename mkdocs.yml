@@ -1,8 +1,15 @@
 site_name: OAE PINN Emulator — Thesis
 site_url: https://oae-pinn-emulator.github.io/
 
+theme:
+  name: material
+
 nav:
   - Home: index.md
 
 plugins:
   - search
+
+repo_name: OAE-PINN-Emulator/OAE-PINN-Emulator.github.io
+repo_url: https://github.com/OAE-PINN-Emulator/OAE-PINN-Emulator.github.io
+edit_uri: edit/main/docs/
