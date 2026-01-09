@@ -1,4 +1,4 @@
-site_name: OAE PINN Emulator — Thesis
+site_name: OAE PINN Emulator
 site_url: https://oae-pinn-emulator.github.io/
 
 theme:
@@ -6,6 +6,8 @@ theme:
 
 nav:
   - Home: index.md
+  - Code: code.md
+  - Playground: playground.md
 
 plugins:
   - search
