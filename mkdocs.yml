@@ -1,1 +1,4 @@
-site_name: My Docs
+site_name: My thesis site
+site_url: https://oae-pinn-emulator.github.io
+theme:
+  name: material
