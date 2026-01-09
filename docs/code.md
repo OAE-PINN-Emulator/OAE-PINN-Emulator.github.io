@@ -1,5 +1,5 @@
 # Code
 
-Codebase: https://github.com/OAE-PINN-Emulator/code
+Codebase: [github.com/OAE-PINN-Emulator](https://github.com/OAE-PINN-Emulator)
 
-Repro + training scripts will live here (setup + usage docs coming soon).
+Repo + training scripts will live here (setup + usage docs coming soon).
