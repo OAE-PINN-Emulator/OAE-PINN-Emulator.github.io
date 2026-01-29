@@ -6,8 +6,8 @@ theme:
 
 nav:
   - Home: index.md
-  - Code: code.md
-  - Playground: playground.md
+  - Demo: demo.md
+  - Reproduce: reproduce.md
 
 plugins:
   - search
