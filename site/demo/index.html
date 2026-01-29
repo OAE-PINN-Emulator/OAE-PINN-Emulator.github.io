@@ -258,6 +258,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Demo
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -274,6 +292,69 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#example-output-placeholder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example output (placeholder)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-the-demo-will-include-soon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What the demo will include (soon)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#planned-usage-placeholder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Planned usage (placeholder)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Links
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -326,6 +407,58 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#example-output-placeholder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example output (placeholder)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-the-demo-will-include-soon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What the demo will include (soon)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#planned-usage-placeholder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Planned usage (placeholder)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Links
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -345,13 +478,40 @@
 
 
 <h1 id="demo-coming-soon">Demo (coming soon)</h1>
-<p>This page will host a <strong>precomputed example</strong> you can run quickly to verify the pipeline end-to-end without generating new simulations.</p>
-<p>Planned contents:
-- a small downloadable sample dataset (NetCDF)
-- one command to run evaluation + produce a figure/GIF
-- expected output screenshot</p>
-<p>For now, the code repo is here:
-https://github.com/OAE-PINN-Emulator/OAE-PINN-Emulator</p>
+<p>This page will host a precomputed example you can run quickly to verify the pipeline end-to-end without generating new simulations.
+You can compare the performance of physics-informed vs data-only models.</p>
+<div class="admonition info">
+<p class="admonition-title">Status</p>
+<p>The interactive demo is not live yet. This page documents the intended demo workflow and shows an example output.</p>
+</div>
+<hr />
+<h2 id="example-output-placeholder">Example output (placeholder)</h2>
+<p><img alt="Tracer truth vs prediction" src="../assets/tracer_truth_vs_pred_white_to_darkblue.gif" /></p>
+<hr />
+<h2 id="what-the-demo-will-include-soon">What the demo will include (soon)</h2>
+<ul>
+<li>A small sample dataset (NetCDF)</li>
+<li>Two model modes:</li>
+<li><strong>Physics OFF</strong>: data-only model</li>
+<li><strong>Physics ON</strong>: physics-informed model (PDE residual penalty)</li>
+<li>One command (or a lightweight UI) to run inference</li>
+<li>Outputs:</li>
+<li>a prediction figure/GIF</li>
+<li>a metrics summary (JSON/CSV)</li>
+</ul>
+<hr />
+<h2 id="planned-usage-placeholder">Planned usage (placeholder)</h2>
+<p>From the code repo:</p>
+<ul>
+<li>Install dependencies: <code>uv sync</code></li>
+<li>Run inference:</li>
+<li><code>uv run python -m oae_pinn.demo --model physics_on --data demo</code></li>
+<li><code>uv run python -m oae_pinn.demo --model physics_off --data demo</code></li>
+</ul>
+<hr />
+<h2 id="links">Links</h2>
+<p><a class="md-button md-button--primary" href="https://github.com/OAE-PINN-Emulator/OAE-PINN-Emulator">View code</a>
+<a class="md-button" href="../reproduce/">Reproduce guide</a></p>
 
 
 
