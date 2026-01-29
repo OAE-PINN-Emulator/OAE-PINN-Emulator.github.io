@@ -4,6 +4,15 @@ site_url: https://oae-pinn-emulator.github.io/
 theme:
   name: material
 
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - attr_list
+  - md_in_html
+
 nav:
   - Home: index.md
   - Demo: demo.md
