@@ -9,10 +9,10 @@ This is a starter reproducibility guide. I’ll make the commands and dataset ID
 
 ## 1) Clone the code repo
 
-~~bash
+'''bash
 git clone git@github.com:OAE-PINN-Emulator/OAE-PINN-Emulator.git
 cd OAE-PINN-Emulator
-~~
+'''
 
 ---
 
@@ -20,15 +20,15 @@ cd OAE-PINN-Emulator
 
 If the repo contains `pyproject.toml` + `uv.lock`:
 
-~~bash
+'''bash
 uv sync
-~~
+'''
 
 Run any command like:
 
-~~bash
+'''bash
 uv run python --version
-~~
+'''
 
 !!! tip "Recommended workflow"
     Prefer `uv run ...` over manually activating a virtualenv. It keeps runs consistent and reproducible.
@@ -39,10 +39,10 @@ uv run python --version
 
 Recommended (kept out of git):
 
-~~bash
+'''bash
 # from the repo root
 mkdir -p data outputs
-~~
+'''
 
 - `data/` → NetCDF datasets (Oceananigans output or downloaded sample)
 - `outputs/` → checkpoints, predictions, plots, logs
@@ -56,10 +56,10 @@ mkdir -p data outputs
 
 This will become the “one command” path.
 
-~~bash
+'''bash
 # placeholder (will be made exact)
 uv run python -m oae_pinn.eval --config configs/demo.yaml
-~~
+'''
 
 Planned outputs:
 - a figure/GIF saved under `outputs/`
@@ -69,13 +69,13 @@ Planned outputs:
 
 ## 5) Train + evaluate from configs (placeholder)
 
-~~bash
+'''bash
 # TRAIN (placeholder)
 uv run python -m oae_pinn.train --config configs/baseline.yaml
 
 # EVAL (placeholder)
 uv run python -m oae_pinn.eval --config configs/baseline.yaml
-~~
+'''
 
 !!! note "To be finalized"
     These module names and config paths will be updated to match the final repo structure and CLI.
